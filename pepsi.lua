@@ -1,6 +1,6 @@
 local library = {
 	Version = "3.0",
-	WorkspaceName = "Shadow Hub Premium Script",
+	WorkspaceName = "Sx Hub Premium",
 	flags = {},
 	signals = {},
 	objects = {},
