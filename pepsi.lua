@@ -1,6 +1,6 @@
 local library = {
 	Version = "3.0",
-	WorkspaceName = "Sx Hub Premium",
+	WorkspaceName = "Snake x Workspace",
 	flags = {},
 	signals = {},
 	objects = {},
@@ -161,15 +161,15 @@ local function resolveid(image, flag)
 								end
 							end)
 							codename = string.sub(codename, 1, 24) .. tostring(fixes)
-							local fold = isfolder("./Sx Hub Premium")
+							local fold = isfolder("./Snake x")
 							if not fold then
-								makefolder("./Sx Hub Premium")
+								makefolder("./Snake x")
 							end
-							fold = isfolder("./Sx Hub Premium /Themes")
+							fold = isfolder("./Snake x/Themes")
 							if not fold then
-								makefolder("./Sx Hub Premium/Themes")
+								makefolder("./Snake x/Themes")
 							end
-							fold = isfolder("./Sx Hub Premium/Themes/SynapseAssetsCache")
+							fold = isfolder("./Snake x /Themes/SynapseAssetsCache")
 							if not fold then
 								makefolder("./Sx Hub Premium  Themes/SynapseAssetsCache")
 							end
