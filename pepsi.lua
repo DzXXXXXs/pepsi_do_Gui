@@ -1,6 +1,6 @@
 local library = {
 	Version = "3.0",
-	WorkspaceName = "Snake x Workspace",
+	WorkspaceName = "Xero x Workspace",
 	flags = {},
 	signals = {},
 	objects = {},
@@ -161,22 +161,22 @@ local function resolveid(image, flag)
 								end
 							end)
 							codename = string.sub(codename, 1, 24) .. tostring(fixes)
-							local fold = isfolder("./Snake x")
+							local fold = isfolder("./Xero x")
 							if not fold then
-								makefolder("./Snake x")
+								makefolder("./Xero x")
 							end
-							fold = isfolder("./Snake x/Themes")
+							fold = isfolder("./Xero x/Themes")
 							if not fold then
-								makefolder("./Snake x/Themes")
+								makefolder("./Xero x/Themes")
 							end
-							fold = isfolder("./Snake x /Themes/SynapseAssetsCache")
+							fold = isfolder("./Xero x /Themes/SynapseAssetsCache")
 							if not fold then
-								makefolder("./Sx Hub Premium  Themes/SynapseAssetsCache")
+								makefolder("./Xero x Premium  Themes/SynapseAssetsCache")
 							end
-							if not fold or not isfile("./Sx Hub Premium /Themes/SynapseAssetsCache/" .. codename .. ".dat") then
+							if not fold or not isfile("./Xero x Hub /Themes/SynapseAssetsCache/" .. codename .. ".dat") then
 								local res = game:HttpGet(string.sub(image, 15))
 								if res ~= nil then
-									writefile("./Sx Hub Premium /Themes/SynapseAssetsCache/" .. codename .. ".dat", res)
+									writefile("./Xero x Premium /Themes/SynapseAssetsCache/" .. codename .. ".dat", res)
 								end
 							end
 							return getsynasset(readfile("./Sx Hub Premium /Themes/SynapseAssetsCache/" .. codename .. ".dat"))
@@ -5980,3 +5980,9 @@ library.AddWindow = library.CreateWindow
 library.Window = library.CreateWindow
 library.W = library.CreateWindow
 return library, library_flags, library.subs
+                function labell:Set(newtext)
+                    Label.Text = newtext
+                end
+    
+                return labell
+            end
