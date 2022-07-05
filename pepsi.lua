@@ -5980,9 +5980,3 @@ library.AddWindow = library.CreateWindow
 library.Window = library.CreateWindow
 library.W = library.CreateWindow
 return library, library_flags, library.subs
-                function labell:Set(newtext)
-                    Label.Text = newtext
-                end
-    
-                return labell
-            end
